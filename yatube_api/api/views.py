@@ -21,7 +21,7 @@ class GroupViewSet(viewsets.ReadOnlyModelViewSet):
 
 
 class PostViewSet(viewsets.ModelViewSet):
-    """Представление для работы с объектами модели Post."""
+    """Представление для работ с объектами модели Post."""
     queryset = Post.objects.all()
     serializer_class = PostSerializer
 
