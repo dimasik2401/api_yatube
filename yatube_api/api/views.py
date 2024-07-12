@@ -1,7 +1,5 @@
 from django.shortcuts import get_object_or_404
-
 from posts.models import Group, Post
-
 from rest_framework import status, viewsets
 from rest_framework.exceptions import APIException
 
@@ -21,7 +19,7 @@ class GroupViewSet(viewsets.ReadOnlyModelViewSet):
 
 
 class PostViewSet(viewsets.ModelViewSet):
-    """Представление для работ с объектами модели Post."""
+    """Представление для работы с объектами модели Post."""
     queryset = Post.objects.all()
     serializer_class = PostSerializer
 
